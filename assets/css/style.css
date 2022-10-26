@@ -4,14 +4,16 @@
 }
 
 nav {
-    position: fixed;
+    position:fixed;
+    top: 0;
     height: 40px;
     width: 100%;
-    background-color: slateblue;
-    box-shadow: 0 0 25px 0 gray;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 0 0 25px 0 black;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.9em;
     color: white;
+    z-index: 9999;
 }
 
 .navText {
@@ -19,4 +21,27 @@ nav {
     list-style: none;
     display: inline-flex;
     column-gap: 30px;
+}
+
+.header { 
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 28px 0 0 0px;
+    z-index: 9900
+}
+
+/* Code referenced from https://www.w3schools.com/howto/howto_css_image_text.asp in order to center text over the image */
+.bannerText {
+    color:rgb(255, 255, 255);
+    font-size: 3.3em;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
