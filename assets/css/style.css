@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: slateblue;
+    box-shadow: 0 0 25px 0 gray;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.navText {
+    padding: 2px 0 0 0;
+    list-style: none;
+    display: inline-flex;
+    column-gap: 30px;
+}
