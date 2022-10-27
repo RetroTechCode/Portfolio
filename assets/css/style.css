@@ -45,3 +45,10 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 452px) {
+    nav {
+        font-size:10px;
+        height: 50px;
+    }
+}
