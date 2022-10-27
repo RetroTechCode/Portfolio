@@ -1,3 +1,8 @@
+:root {
+    --bg: rgb(58, 58, 58);
+    --orange: rgb(222, 95, 40);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,17 +26,18 @@ nav {
 main {
     display:flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 aside {
     flex: 1;
     font-weight:bold;
-    color:rgb(222, 95, 40);
+    color: var(--orange);
     padding: 100px 100px 0 50px;
 }
 
 figcaption {
-    color: rgb(222,95,40);
+    color: var(--orange);
 }
 
 .navText {
