@@ -37,20 +37,36 @@ nav a:active {
 }
 
 main {
+    display:block;
+    
+}
+
+section {
     display:flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    margin: 40px 0 150px;
+}
+
+h2 {
+
 }
 
 aside {
-    flex: 1;
+    width: 15%;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
     font-weight:bold;
     color: var(--orange);
-    padding: 100px 100px 0 50px;
+    justify-content: right;
+    padding-right: 15px;
 }
 
 figcaption {
     color: var(--orange);
+}
+
+article {
+    padding-left: 30px;
 }
 
 .navText {
@@ -84,9 +100,29 @@ figcaption {
     transform: translate(-50%, -50%);
 }
 
+/* .card {
+    display: flex;
+    flex: 1 0 50%;
+    flex-direction: column;
+} */
+
+.about {
+    border-right: 3px solid var(--orange)
+}
+
+.work {
+    height: 400px;
+    border-right: 3px solid var(--orange)
+}
+
+.contact {
+    height: 100px;
+    border-right: 3px solid var(--orange)
+}
+
 .workImage {
-    height: 18%;
-    width: 32%;
+    height: 18px;
+    width: 32px;
 }
 
 /* Media queries for accessibility across screen sizes and resolutions */
@@ -103,8 +139,5 @@ figcaption {
     main,
     .bannerText {
         padding: 50px 0 0 0;
-    }
-    aside {
-        padding: 5% 100px 0 5%;
     }
 }
