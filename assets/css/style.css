@@ -6,6 +6,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-margin: 60px;
 }
 
 body {
@@ -46,10 +48,6 @@ section {
     margin: 40px 0 150px;
 }
 
-h2 {
-
-}
-
 aside {
     width: 15%;
     height: 200px;
@@ -75,6 +73,7 @@ article {
     justify-content: center;
     display: flex;
     column-gap: 30px;
+    font-weight: 700;
 }
 
 .header { 
@@ -98,6 +97,7 @@ article {
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 900;
 }
 
 /* .card {
@@ -126,7 +126,7 @@ article {
 }
 
 /* Media queries for accessibility across screen sizes and resolutions */
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 500px) {
     nav {
         height: 80px;
     }
