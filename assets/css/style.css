@@ -49,7 +49,7 @@ section {
 }
 
 h2 {
-    width: 300px;
+    width: 5000px;
     text-align: right;
 }
 
@@ -60,7 +60,11 @@ aside {
     font-weight:bold;
     color: var(--orange);
     justify-content: right;
-    padding-right: 20px;
+    padding-right: 1.25rem;
+}
+
+figure {
+    height: 32rem;
 }
 
 figcaption {
@@ -68,7 +72,8 @@ figcaption {
 }
 
 article {
-    padding-left: 30px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .navText {
@@ -104,19 +109,13 @@ article {
     font-weight: 900;
 }
 
-/* .card {
-    display: flex;
-    flex: 1 0 50%;
-    flex-direction: column;
-} */
-
 /* Aside element classes */
 .about {
     border-right: 3px solid var(--orange);
 }
 
 .work {
-    height: 400px;
+    height: 96rem;
     border-right: 3px solid var(--orange);
 }
 
@@ -126,36 +125,78 @@ article {
 }
 
 .workBox {
-    flex: 1 0 0;
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.columnOne {
-    width: 50%;
-}
-
-.columnTwo {
-    width: 50%;
+.workBox p {
+    width: 32rem;
 }
 
 .workImage {
-    height: 113px;
-    width: 200px;
+    height: 18rem;
+    width: 32rem;
 }
 
 /* Media queries for accessibility across screen sizes and resolutions */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     nav {
         height: 80px;
     }
+
     .navText {
         text-align: center;
         font-size: 0.7em;
         flex-direction: column;
     }
+
     header,
     main,
     .bannerText {
         padding: 50px 0 0 0;
+    }
+
+    aside {
+        font-size: 0.85rem;
+        width: 20%;
+    }
+
+    figure {
+        height: 12rem;
+    }
+
+    .work {
+        height: 36rem;
+    }
+
+    .workBox p {
+        width: 12rem;
+    }
+
+    .workImage {
+        height: 6.75rem;
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    figure {
+        height: 16rem;
+    }
+
+    .work {
+        height: 96rem;
+    }
+
+    .workBox p {
+        width: 16rem;
+    }
+
+    .workImage {
+        height: 9rem;
+        width: 16rem;
     }
 }
