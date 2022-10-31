@@ -48,15 +48,19 @@ section {
     margin: 40px 0 150px;
 }
 
+h2 {
+    width: 300px;
+    text-align: right;
+}
+
 aside {
     width: 15%;
     height: 200px;
     display: flex;
-    flex-wrap: nowrap;
     font-weight:bold;
     color: var(--orange);
     justify-content: right;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 figcaption {
@@ -106,23 +110,37 @@ article {
     flex-direction: column;
 } */
 
+/* Aside element classes */
 .about {
-    border-right: 3px solid var(--orange)
+    border-right: 3px solid var(--orange);
 }
 
 .work {
     height: 400px;
-    border-right: 3px solid var(--orange)
+    border-right: 3px solid var(--orange);
 }
 
 .contact {
     height: 100px;
-    border-right: 3px solid var(--orange)
+    border-right: 3px solid var(--orange);
+}
+
+.workBox {
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.columnOne {
+    width: 50%;
+}
+
+.columnTwo {
+    width: 50%;
 }
 
 .workImage {
-    height: 18px;
-    width: 32px;
+    height: 113px;
+    width: 200px;
 }
 
 /* Media queries for accessibility across screen sizes and resolutions */
