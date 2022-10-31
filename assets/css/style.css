@@ -124,6 +124,11 @@ article {
     border-right: 3px solid var(--orange);
 }
 
+.aboutText {
+    color: white;
+    font-size: 1.4rem;
+}
+
 .workBox {
     display: flex;
     text-align: center;
@@ -147,12 +152,6 @@ article {
         height: 80px;
     }
 
-    .navText {
-        text-align: center;
-        font-size: 0.7em;
-        flex-direction: column;
-    }
-
     header,
     main,
     .bannerText {
@@ -166,6 +165,16 @@ article {
 
     figure {
         height: 12rem;
+    }
+
+    .navText {
+        text-align: center;
+        font-size: 0.7em;
+        flex-direction: column;
+    }
+
+    .aboutText {
+        font-size: 1rem;
     }
 
     .work {
@@ -185,6 +194,10 @@ article {
 @media screen and (max-width: 576px) {
     figure {
         height: 16rem;
+    }
+
+    .aboutText {
+        font-size: 0.9rem;
     }
 
     .work {
