@@ -154,6 +154,15 @@ article {
     width: 32rem;
 }
 
+.githubLink {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.githubLink:hover {
+    color: gray;
+}
+
 /* Media queries for accessibility across screen sizes and resolutions */
 @media screen and (max-width: 768px) {
     nav {
