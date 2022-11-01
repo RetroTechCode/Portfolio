@@ -126,7 +126,7 @@ article {
 }
 
 .contact {
-    height: 100px;
+    height: 3rem;
     border-right: 3px solid var(--orange);
 }
 
@@ -163,8 +163,44 @@ article {
     color: gray;
 }
 
+.githubLink:active {
+    color: black;
+}
+
+.contactArticle {
+    width: 100%;
+}
+
+.contactLinks {
+    color: white;
+    font-size: 2.5rem;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactLink {
+    text-decoration: none;
+    color: white;
+    margin: 0 0.3rem;
+}
+
+.contactLink:hover {
+    color: var(--orange)
+}
+
+.contactLink:active {
+    color: black;
+}
+
 /* Media queries for accessibility across screen sizes and resolutions */
 @media screen and (max-width: 768px) {
+    * {
+        scroll-margin: 90px;
+    }
+
     nav {
         height: 80px;
     }
@@ -196,11 +232,15 @@ article {
     }
 
     .about {
-        height: 28em;
+        height: 24rem;
     }
 
     .work {
         height: 37rem;
+    }
+
+    .contact {
+        height: 9rem; 
     }
 
     .workBox p {
